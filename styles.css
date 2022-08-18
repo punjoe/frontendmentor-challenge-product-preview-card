@@ -1,0 +1,96 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 500px;
+    width: 650px;
+    display: flex;
+    background-color: white;
+    border-radius: 5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media screen(min-width=375px) {
+        .container {
+            flex-direction: column
+        }
+    }
+
+
+}
+
+
+.leftbox,
+.rightbox {
+    display: inline-block;
+    height: 500px;
+    width: 333px;
+
+}
+
+.rightbox {
+    padding-left: 50px;
+}
+
+.picofparfum {
+    height: 500px;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+h1,
+.price h1 {
+    font-family: 'Fraunces', serif;
+}
+
+p,
+h3,
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    border-radius: 5%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.price h1 {
+    padding-right: 10%;
+    color:
+        hsl(158, 36%, 37%);
+}
+
+.oldprice {
+    text-decoration: line-through;
+}
+
+
+.price h1,
+.price p {
+    display: inline;
+    vertical-align: middle;
+}
+
+.button {
+    margin: auto;
+    background-color: hsl(158, 36%, 37%);
+    border: 0px;
+    width: 235px;
+    height: 50px;
+    color: white;
+
+}
+
+.button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
